@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landspace, Pure CSS</title>
+  <style>
+    .Landscape {
+      width: 100vw;
+      height: 100vh;
+      background: -webkit-linear-gradient(#0e1b58, #5a4eb8, #e394dd, #ffacc1);
+      overflow: hidden;
+    }
+    .moon {
+      width: 5em;
+      height: 5em;
+      border-radius: 50%;
+      box-shadow: 1em 1em 10em #ccc,
+      -1em -1em 10em #ccc,
+      -1em 1em 10em #ccc,
+      1em -1em 10em #ccc;
+      background-color: #fff;
+      position:absolute;
+      top: 20vh;
+      left: 50vw;
+    }
+    .star{
+      width: .5em;
+      height: .5em;
+      color: #fff;
+      position: absolute;
+      box-shadow: 20vh 20vw .5em currentColor,
+      10vh 34vw .5em currentColor,
+      23vh 25vw .5em currentColor,
+      70vh 54vw .5em currentColor,
+      69vh 4vw .5em currentColor,
+      45vh 10vw .5em currentColor,
+      25vh 19vw .5em currentColor,
+      64vh 21vw .5em currentColor,
+      83vh 37vw .5em currentColor,
+      17vh 10vw .5em currentColor,
+      89vh 12vw .5em currentColor,
+      53vh 15vw .5em currentColor,
+      67vh 3vw .5em currentColor,
+      38vh 29vw .5em currentColor,
+      80em 27vw .5em currentColor,
+      74vh 22vw .5em currentColor,
+      50vh 15vw .5em currentColor;
+    }
+    .elips {
+      width: 100vw;
+      height: 80vh;
+      border-radius: 50%;
+      background: -webkit-linear-gradient(#0e1b58, #5a4eb8, #e394dd, #ffacc1);
+    }
+    .one {
+      top: 70vh;
+      left: -30vw;
+      position: relative;
+    }
+    .two {
+      top: -15vh;
+      left: 50vw;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="Landscape">
+    <div class="moon"></div>
+    <div class="star"></div>
+    <div class="elips one"></div>
+    <div class="elips two"></div>
+  </div>
+</body>
+</html>

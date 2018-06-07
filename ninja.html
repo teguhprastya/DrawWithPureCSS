@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ninja, Pure CSS</title>
+  <style>
+    .ninja{
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      background-color: black;
+      border-radius: 50%;
+      top: 100px;
+      left: 100px;
+    }
+    .ninja::before{
+      content: "";
+      width: 170px;
+      height: 0px;
+      position: absolute;
+      color: blue;
+      background-color: currentColor;
+      border-radius: 170px 170px 100px 100px;
+      border-top: solid 70px black;
+      border-bottom: solid 10px black;
+      top: 115px;
+      left: -25px;
+    }
+    .ninja::after{
+      content: "";
+      position: absolute;
+      height: 55px;
+      width: 10px;
+      background-color: black;
+      border-radius: 5px;
+      top:75px;
+      left: -15px;
+      transform: rotate(-30deg);
+    }
+    .ninja i{
+      width: 90px;
+      height: 40px;
+      position: absolute;
+      background-color: white;
+      border-radius: 15px;
+      top: 40px;
+      left: 15px;
+    }
+    .ninja i::before{
+      content: "";
+      width: 10px;
+      height: 15px;
+      position: absolute;
+      color:black;
+      border-radius: 50%;
+      box-shadow: 20px 12px currentColor,
+      60px 12px currentColor;
+    }
+  </style>
+</head>
+<body>
+  <div class="ninja"><i></i></div>
+</body>
+</html>

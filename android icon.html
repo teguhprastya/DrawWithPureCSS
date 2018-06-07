@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Android Icon, Pure CSS</title>
+  <style>
+    .android{
+      width: 250px;
+      height: 350px;
+      position: absolute;
+      color: rgb(153,204,1);
+      background-color: currentColor;
+      border-radius: 110px 110px 25px 25px;
+      top: 100px;
+      left: 100px;
+    }
+    .android::before{
+      content: "";
+      width: 55px;
+      height: 170px;
+      color: rgb(153,204,1);
+      position: absolute;
+      border-radius: 25px;
+      box-shadow: -70px 130px currentColor,
+      265px 130px currentColor,
+      55px 265px currentColor,
+      145px 265px currentColor;
+    }
+    .android::after{
+      content: "";
+      width: 250px;
+      height: 15px;
+      position: absolute;
+      color: #fff;
+      background-color: currentColor;
+      top: 110px;
+    }
+    .android i {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      border-radius: 50%;
+      color: #fff;
+      box-shadow: 60px 35px currentColor,
+      160px 35px currentColor;
+    }
+    .android i::before{
+      content: "";
+      width: 10px;
+      height: 60px;
+      position: absolute;
+      color: rgb(153,204,1);
+      background-color: currentColor;
+      border-radius: 10px;
+      transform: rotate(-30deg);
+      top: -40px;
+      left: 55px;
+    }
+    .android i::after{
+      content: "";
+      width: 10px;
+      height: 60px;
+      position: absolute;
+      color: rgb(153,204,1);
+      background-color: currentColor;
+      border-radius: 10px;
+      transform: rotate(30deg);
+      top: -40px;
+      left: 185px;
+    }
+  </style>
+</head>
+<body>
+  <div class="android"><i></i></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eye, Pure CSS</title>
+  <style>
+    .eye{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      color: black;
+      background-color: currentColor;
+      top: 100px;
+      left: 100px;
+      border-radius: 170px 10px;
+      transform: rotate(45deg);
+    }
+    .eye::before{
+      content: "";
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      color: white;
+      border: solid 15px currentColor;
+      border-radius: 50%;
+      top: 45px;
+      left: 45px;
+    }
+    .eye::after{
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      color: white;
+      background-color: currentColor;
+      border-radius: 50%;
+      top: 55px;
+      left: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="eye"></div>
+</body>
+</html>

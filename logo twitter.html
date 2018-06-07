@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twitter icon, Pure CSS</title>
+  <style>
+    .twitter{
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      color: rgb(29,161,242);
+      background-color: currentColor;
+      border-radius: 50%;
+      top: 100px;
+      left: 200px;
+    }
+    .twitter::before{
+      content: "";
+      width: 100px;
+      height:60px;
+      position: absolute;
+      border-radius: 0 0 0 100%;
+      border-bottom: solid 60px rgb(29,161,242);
+      left: -79px;
+      top: -53px;
+      transform: rotate(-78deg);
+      transform-origin: right 80px;
+    }
+    .twitter::after{
+      content: "";
+      width: 10px;
+      height: 0;
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      border-top: solid 10px rgb(29,161,242);
+      border-bottom: solid 10px rgb(29,161,242);
+      border-right: solid 15px transparent;
+      transform: rotate(-25deg);
+      transform-origin: left 10px;
+    }
+    .twitter i{
+      width: 65px;
+      height: 15px;
+      position: absolute;
+      border-bottom: solid 35px rgb(29,161,242);
+      border-radius: 0 0 0 100%;
+      top:20px;
+      left: -55px;
+      transform: rotate(10deg);
+
+    }
+    .twitter i::before{
+      content: "";
+      width: 55px;
+      height: 10px;
+      position: absolute;
+      border-bottom: solid 30px rgb(29,161,242);
+      border-radius: 0 0 0 100%;
+      transform: rotate(-10deg);
+      top: 25px;
+      left: 5px;
+    }
+    .twitter i::after{
+      content: "";
+      width: 55px;
+      height: 10px;
+      position: absolute;
+      border-bottom: solid 30px rgb(29,161,242);
+      border-radius: 0 0 0 100%;
+      transform: rotate(-25deg);
+      top: 40px;
+      left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="twitter"><i></i></div>
+</body>
+</html>

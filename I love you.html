@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .i{
+      width: 40px;
+      height: 250px;
+      position: absolute;
+      color: black;
+      box-shadow: 40px 20px 0 currentColor;
+    }
+    .i::before{
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 40px;
+      background-color: black;
+      left: 20px;
+      top: 20px;
+    }
+    .i::after{
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 40px;
+      background-color: black;
+      left: 20px;
+      top: 240px;
+    }
+    .love{
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      color: red;
+      box-shadow: 240px -120px currentColor;
+      transform: rotate(45deg);
+
+    }
+    .love::before{
+      width: 160px;
+      height: 160px;
+      background-color: red;
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      left: 160px;
+      top: -120px;
+    }
+    .love::after{
+      width: 160px;
+      height: 160px;
+      background-color: red;
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      left: 240px;
+      top: -200px;
+    }
+    .love:hover{
+      animation: beat .5s ease infinite;
+    }
+    .u{
+      width: 120px;
+      height: 170px;
+      position: absolute;
+      color: black;
+      border-right: solid 40px currentColor;
+      border-left: solid 40px currentColor;
+      top: 40px;
+      left: 580px;
+    }
+    .u::before{
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      color: black;
+      border-radius: 50%;
+      border-top: solid 40px transparent;
+      border-right: solid 40px currentColor;
+      border-left: solid 40px transparent;
+      border-bottom: solid 40px currentColor;
+      transform: rotate(45deg);
+      top: 60px;
+      left: -40px;
+    }
+    @keyframes beat {
+      0%{ transform: scale(1) rotate(45deg);}
+      100%{ transform: scale(1.03) rotate(45deg);}
+    }
+  </style>
+</head>
+<body>
+  <div class="i"></div>
+  <div class="love"></div>
+  <div class="u"></div>
+</body>
+</html>
