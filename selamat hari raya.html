@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Selamat Hari Raya Idul Fitri</title>
+  <style>
+    #bedug{
+      position: absolute;
+      margin: 150px;
+      width: 300px;
+      height: 200px;
+      background: linear-gradient(black, white, black);
+      border-radius: 40px/100px;
+      border: solid 5px black;
+      z-index: 1;
+    }
+    #bedug::before{
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 200px;
+      background: radial-gradient(white, black);
+      border-radius: 40px/100px;
+      border: solid 5px black;
+      top: -5px;
+      left: -5px;
+    }
+    #papankanan{
+      position: absolute;
+      height: 200px;
+      width: 50px;
+      background-color: black;
+      border: solid 2px white;
+      transform: skew(30deg);
+      top: 250px;
+      left: 290px;
+      z-index: 0;
+    }
+    #papankiri{
+      position: absolute;
+      height: 200px;
+      width: 50px;
+      background-color: black;
+      border: solid 2px white;
+      transform: skew(-30deg);
+      top: 250px;
+      left: 300px;
+      z-index: 2;
+    }
+    #kanan{
+      position: absolute;
+      width: 20px;
+      height: 70px;
+      background-color: black;
+      border-radius: 0 0 10px 10px;
+      border: solid 1px white;
+      top: 250px;
+      left: 120px;
+      z-index: 2;
+      animation: kanan 2s linear infinite;
+    }
+    #kanan::before{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      border-radius: 40px/100px;
+      border: solid 1px white;
+      top: -40px;
+      left: -10px;
+    }
+    #kiri{
+      position: absolute;
+      width: 20px;
+      height: 70px;
+      background-color: black;
+      border-radius: 0 0 10px 10px;
+      border: solid 1px white;
+      top: 260px;
+      left: 130px;
+      z-index: 2;
+      animation: kiri 2s linear infinite;
+    }
+    #kiri::before{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      border-radius: 40px/100px;
+      border: solid 1px white;
+      top: -40px;
+      left: -10px;
+    }
+    @keyframes kanan {
+      0%{transform: rotate(0deg);}
+      25%{transform: rotate(-30deg);}
+      50%{transform: rotate(00deg);}
+      75%{transform: rotate(30deg);}
+      100%{transform: rotate(0deg);}
+    }
+    @keyframes kiri {
+      0%{transform: rotate(0deg);}
+      25%{transform: rotate(30deg);}
+      50%{transform: rotate(00deg);}
+      75%{transform: rotate(-30deg);}
+      100%{transform: rotate(0deg);}
+    }
+    #ucapan{
+      position: absolute;
+      padding: 0;
+      text-align: center;
+      font-family: cursive;
+      font-size: 50px;
+      font-weight: bold;
+      top: 200px;
+      left: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div id="bedug"></div>
+  <div id="papankanan"></div>
+  <div id="papankiri"></div>
+  <div id="kanan"></div>
+  <div id="kiri"></div>
+  <div id="ucapan">Selamat Hari Raya Idul Fitri </br> Mohon Maaf Lahir & Batin</div>
+</body>
+</html>
